@@ -1,22 +1,7 @@
-import { useEffect } from "react";
 import { Textfit } from "react-textfit";
 import { render } from "react-dom";
 
 export default function App() {
-  useEffect(() => {
-    var style = document.createElement("style");
-    var toolbarStyle = `
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
-  
-      body {
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-          "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-          "Helvetica Neue", sans-serif;
-      }
-    `;
-    style.innerHTML = toolbarStyle;
-    document.head.appendChild(style);
-  }, []);
   return (
     <div
       className='App'
